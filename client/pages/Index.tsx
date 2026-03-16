@@ -7,6 +7,8 @@ import ValuesSection from "@/components/sections/ValuesSection";
 import CTASection from "@/components/sections/CTASection";
 
 export default function Index() {
+  const logoSrc = `${import.meta.env.BASE_URL}images/logo.png`;
+
   return (
     <div className="min-h-screen font-['Inter',sans-serif]">
       <Navbar />
@@ -23,7 +25,7 @@ export default function Index() {
       <footer className="border-t border-gray-100 bg-[#FDFDFD] px-6 py-8 md:px-8">
         <div className="mx-auto flex max-w-[1280px] flex-col items-center justify-between gap-4 sm:flex-row">
           <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/6d7c26eb3b937b891de9acf50dff8a4079296847"
+            src={logoSrc}
             alt="Hubyai"
             className="h-7 w-auto"
           />

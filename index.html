@@ -4,6 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hubyai</title>
+    <script>
+      (function () {
+        const p = window.location.pathname;
+        const looksLikeFile = /\.[a-zA-Z0-9]+$/.test(p);
+
+        if (p !== "/" && !p.endsWith("/") && !looksLikeFile) {
+          window.location.replace(`${p}/${window.location.search}${window.location.hash}`);
+        }
+      })();
+    </script>
   </head>
 
   <body>

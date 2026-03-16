@@ -2,14 +2,16 @@ import { useState } from "react";
 
 export default function Navbar() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const homeHref = `${import.meta.env.BASE_URL}#/`;
+  const logoSrc = `${import.meta.env.BASE_URL}images/logo.png`;
 
   return (
     <header className="sticky top-0 z-50 flex h-20 items-center justify-center border-b border-gray-100 bg-[#FDFDFD]">
       <div className="mx-auto flex w-full max-w-[1280px] items-center justify-between px-6 md:px-8">
         {/* Logo */}
-        <a href="/" className="flex items-center">
+        <a href={homeHref} className="flex items-center">
           <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/6d7c26eb3b937b891de9acf50dff8a4079296847"
+            src={logoSrc}
             alt="Hubyai"
             className="h-8 w-auto"
           />
