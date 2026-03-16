@@ -9,7 +9,7 @@ export default function Navbar() {
         {/* Logo */}
         <a href="/" className="flex items-center">
           <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/6d7c26eb3b937b891de9acf50dff8a4079296847?width=278"
+            src="https://api.builder.io/api/v1/image/assets/TEMP/6d7c26eb3b937b891de9acf50dff8a4079296847"
             alt="Hubyai"
             className="h-8 w-auto"
           />

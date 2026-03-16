@@ -23,7 +23,7 @@ export default function Index() {
       <footer className="border-t border-gray-100 bg-[#FDFDFD] px-6 py-8 md:px-8">
         <div className="mx-auto flex max-w-[1280px] flex-col items-center justify-between gap-4 sm:flex-row">
           <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/6d7c26eb3b937b891de9acf50dff8a4079296847?width=278"
+            src="https://api.builder.io/api/v1/image/assets/TEMP/6d7c26eb3b937b891de9acf50dff8a4079296847"
             alt="Hubyai"
             className="h-7 w-auto"
           />
